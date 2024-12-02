@@ -54,6 +54,11 @@ on charger
    insmod /vendor/lib/modules/tcpc_sgm7220.ko
    insmod /vendor/lib/modules/mmi_discrete_turbo_charger.ko
 
+on post-fs
+    # Sensors
+    chown system system /sys/devices/platform/soc/4a88000.spi/spi_master/spi0/spi0.0/touchscreen/primary/double_tap_enabled
+    chown system system /sys/devices/platform/soc/4a88000.spi/spi_master/spi0/spi0.0/touchscreen/primary/double_tap_pressed
+
 on post-fs-data
    # Load DLKM that can afford being loaded later
    setprop vendor.mmi_init.stage late
