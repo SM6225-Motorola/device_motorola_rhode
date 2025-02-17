@@ -20,18 +20,9 @@ PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto g52
 PRODUCT_MANUFACTURER := motorola
 
-# RisingFlags
-TARGET_ENABLE_BLUR := false
-RISING_BATTERY := 5000mah
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
-
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    RisingChipset="Snapdragon 680" \
-    RisingMaintainer="ZetLink" \
     BuildDesc="rhode_g-user 13 T2SRS33.72-22-4-10 6ce93-ec5c02 release-keys" \
     BuildFingerprint=motorola/rhode_g/rhode:13/T2SRS33.72-22-4-10/6ce93-ec5c02:user/release-keys \
     DeviceProduct=rhode_g
