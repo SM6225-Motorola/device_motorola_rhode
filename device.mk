@@ -27,8 +27,9 @@ TARGET_SCREEN_WIDTH := 1080
 # Init
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.oem.fingerprint2.sh \
-    init.mmi.overlay.rc
+    init.mmi.overlay.rc \
+    init.nfc.sec.rc \
+    init.oem.fingerprint2.sh
 
 # Moto Camera 4
 TARGET_MOTCAMERA4 := rhode
@@ -38,7 +39,7 @@ $(call inherit-product, vendor/motorola/MotCamera4-bengal/motcamera4.mk)
 
 # NFC
 PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.2-service.samsung
+    android.hardware.nfc-service.sec
 
 # Overlay
 PRODUCT_PACKAGES += \
